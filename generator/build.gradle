@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+// If your IDE fails to run generation (NoClassDefFoundError), run it using gradle
+mainClassName = "com.zzptc.sky.netnews.DaoAutoGenerator"
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':DaoGenerator')
+}
+
+uploadArchives.enabled = false
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
