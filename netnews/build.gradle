@@ -53,6 +53,8 @@ dependencies {
     compile 'com.github.zhaokaiqiang.klog:library:1.5.0'
 
     compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+
+    compile 'com.android.support:design:24.2.1'
 }
 
 uploadArchives.enabled = false

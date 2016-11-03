@@ -6,6 +6,7 @@ import android.content.Context;
 import com.zzptc.sky.netnews.di.module.ActivityModule;
 import com.zzptc.sky.netnews.di.scope.ContextLife;
 import com.zzptc.sky.netnews.di.scope.PerActivity;
+import com.zzptc.sky.netnews.mvp.ui.activities.NewsActivity;
 
 import dagger.Component;
 
@@ -24,4 +25,6 @@ public interface ActivityComponent {
     Context getApplicationContext();
 
     Activity getActivity();
+
+    void inject(NewsActivity newsActivity);
 }

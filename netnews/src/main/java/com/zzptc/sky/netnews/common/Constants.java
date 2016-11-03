@@ -11,4 +11,6 @@ public class Constants {
     //非加密的数据名称
     public static final String DB_NAME = "db_newschanneltable";
 
+    public static final String SHARES_COLORFUL_NEWS = "shares_colorful_news";
+
 }
